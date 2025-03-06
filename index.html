@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Player Registration</title>
+    <link rel="stylesheet" href="style.css"><!--Link to CSS-->
+    
+   
+</head>
+<body>
+    
+    <h1>SPORTS PLAYER REGISTRATION</h1>
+    <h2>PLAYER FORM</h2>
+   <div class="main-container">
+    <div class="section">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input id="name" type="text" placeholder="Enter Your Name"></td>
+            </tr>
+
+            <tr>
+                <td>Age:</td>
+                <td><input id="age" type="number" placeholder="Enter Your Age"></td>
+            </tr>
+
+            <tr>
+                <td>Country:</td>
+                <td><input id="country" type="text" placeholder="Enter Your Country"></td>
+            </tr>
+
+            <tr>
+                <td>Club Team:</td>
+                <td><input id="team" type="text" placeholder="Enter Your Team Name"></td>
+            </tr>
+
+            <tr>
+                <td>Position:</td>
+                <td>
+                    <select id="position">
+                        <option value="Forward">Forward</option>
+                        <option value="Midfielder">Midfielder</option>
+                        <option value="Defender">Defender</option>
+                        <option value="Goalkeeper">Goalkeeper</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>E-mail:</td>
+                <td><input id="email" type="email" placeholder="Enter Your email"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><Button class="save-btn" id="saveBtn">Register</Button></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+<div class="sub-container">
+    <div class="section">
+
+    <h3>Registered Players</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Club Team</th>
+                <th>Position</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="playerList">
+            <!-- Player data will be added here -->
+        </tbody>
+    </table>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
